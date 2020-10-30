@@ -29,10 +29,10 @@ banana
     const theGoods = yay.data.topics // drill down into the data(an ojbect) and take the property that is the array I want to deal with(topics) and call that theGoods <<Array.from(yay.data.topics)>>
     // console.log(theGoods)
     const DOMdiv = document.querySelector('.topics') //*this needed to be outside of the forEach() */
-    console.log(DOMdiv)
+//    console.log(DOMdiv)
     theGoods.forEach(topic => { //now in that var theGoods which contains an array, for each topic in the array of topics, 
       tabMaker(topic) //I want to pass each as an argument into the component function I made called tabMaker
-      console.log(tabMaker(topic)) //what do I get? 5 different <div class="tab">node.js</div>. Good!
+//      console.log(tabMaker(topic)) //what do I get? 5 different <div class="tab">node.js</div>. Good!
       // DOMdiv.appendChild(topic)
 
 
